@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8"> <!--permite caracteres especiais-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Level 2</title>
+    
+  <style>
+
+    * {
+      margin: 0;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif; 
+    
+      text-align: center;
+    }
+    
+    #hero {
+      width: 592px;
+      margin: 0 auto 72px;
+      /*no sorthand com três elementos, o primeiro se refere ao top, o segundo ao left/right e o terceiro ao bottom*/
+
+    }
+
+    #hero img {
+      margin-bottom: 72px;
+    }
+  
+
+
+    h1 {
+      font-family: 'Inter', sans-serif;
+      /*podemos ver sobre especificidade aqui, pois mesmo que eu coloque a fonte open sans no body eu coloquei a inter no h1
+      e como ele é mais específico o css obedece a regra escrita em h1*/
+      font-size: 49px;
+      line-height: 56px;
+      font-weight: normal;
+      margin-bottom: 32px;
+    }
+    
+    h1 span {
+      font-weight: bold;
+  
+    }
+
+
+    span {
+      color: #FF9900;
+      /*na cor hexadecimal o 0 equivale a preto e o F branco*/
+    }
+
+    p {
+      color: #7D7987;
+      font-size: 14px;
+      line-height: 28px;
+      margin-bottom: 72px;
+    }
+
+    #footer {
+      font-size: 14px;
+      line-height: 28px;
+      margin-bottom: 33px;
+
+    }
+
+    #line {
+      width: 568px;
+      height: 0px;
+      margin: 0 auto 8px;
+
+      border: 1px solid #ECEFF2;
+    }
+    a {
+      color: #FF9900;
+    }
+
+    #footer a + a /*isso significs selecionar o a que anterior a ele tem um a, ou seja o segunda a*/{
+      margin-left: 28px;
+
+    }
+
+    #balls {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+    }
+    
+  </style>
+
+</head>
+<body>
+
+ 
+  <div id="hero">
+    <img src="./img1.jpg" alt="Desenho de uma pessoa vestindo uma camisa amarela em uma sala com móveis ">
+  
+    <h1> <span>Unique</span> rooms for you!</h1>
+
+    <p>
+      We create <strong>exclusive</strong> and <strong>unique</strong> rooms, with great taste and professionalism, we invest time and <span>dedication in your project.</span> 
+    <br>
+    <br>
+      Have <span>clean</span> and well decorated rooms, transmitting <strong>elegance</strong> and <strong>refinement</strong> to everyone who is there.
+    </p>
+
+    <div id="footer">
+
+      <div id="line"></div>
+      <a target="_blank" href="#">Instagram</a>
+      
+      <a target="_blank" href="mailto:teste@gmail.com">Talk with us</a>
+    </div>
+    
+  </div>
+
+  <img id="balls" src="./balls.svg" alt="Bolinhas laranjadas no canto direito inferior da tela">
+
+</body>
+</html>
